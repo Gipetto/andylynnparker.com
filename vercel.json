@@ -1,0 +1,6 @@
+{
+  "framework": "sveltekit",
+  "engines": {
+    "node": "22.x"
+  }
+}
