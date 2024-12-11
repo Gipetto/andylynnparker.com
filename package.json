@@ -38,6 +38,8 @@
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.9",
 		"@tailwindcss/typography": "^0.5.15",
+		"posthog-js": "^1.195.0",
+		"posthog-node": "^4.3.1",
 		"resend": "^4.0.1"
 	}
 }
