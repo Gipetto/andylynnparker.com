@@ -2,7 +2,7 @@
   import { socialLinks } from "$src/lib/helpers/navigation"
 
 </script>
-<h1>Contact</h1>
+<h1 class="text-heading-1 font-bold">Contact</h1>
 
 <section class="w-full grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-0">
   <div class="order-1 md:order-0">

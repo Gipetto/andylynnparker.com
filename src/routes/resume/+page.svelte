@@ -1,12 +1,14 @@
 <script lang="ts">
   import resume from "$lib/files/ALP Resume 2024.pdf"
+  import { onMount } from "svelte"
+  import PDFObject from "pdfobject"
+
+  onMount(() => {
+    const pdfDiv = document.getElementById("resume-pdf")
+    PDFObject.embed(resume, pdfDiv)
+  })
 </script>
-<h1>Resume</h1>
+<h1 class="text-heading-1 font-bold">Resume</h1>
 <div class="h-dvh">
-  <embed
-    class="w-full h-full"
-    src={resume}
-    type="application/pdf"
-    title="Andy Lynn Parker Resume"
-  />
+  <div id="resume-pdf" class="w-full h-full"></div>
 </div>
