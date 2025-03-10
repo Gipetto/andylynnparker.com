@@ -1,5 +1,5 @@
 <script lang="ts">
-  import resume from "$lib/files/ALP Resume 2024.pdf"
+  import resume from "$lib/files/ALP Resume 2025.pdf"
   import { onMount } from "svelte"
   import PDFObject from "pdfobject"
 
