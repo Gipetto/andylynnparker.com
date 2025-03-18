@@ -1,38 +1,41 @@
-# sv
+# Andy Lynn Parker portfolio in 11ty
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+The portfolio for [Andy Lynn Parker](https://andylynnparker.com) built on the Eleventy static site builder.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Develop
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
 
-To create a production version of your app:
+## Build
 
-```bash
+```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Publish
+
+This site is published when a merge is performed to the `main` branch.
+
+
+## Utility
+
+Just some stuff so that I don't have to remember it...
+
+### Convert JPG to WebP
+
+Using the standard `webp` package via apt or homebrew.
+
+```sh
+cwebp -q 80 {path/to/image}.jpg -o {path/to/image}.webp
+```
+
+### Rename files with index
+
+```sh
+i=0; for file in ./{prefix}-*; do mv $file "{project-name}-$i.${file##*.}"; i=$(( i + 1 )); done
+```

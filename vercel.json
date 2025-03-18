@@ -1,3 +1,43 @@
-{
-  "framework": "sveltekit"
+{ 
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Permissions-Policy",
+          "value": "interest-cohort=(), browsing-topics=()"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "deny"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Shenanigans",
+          "value": "; DROP TABLE domains;"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "avocados and puppy dogs"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).(png|webp|svg|ico)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, immutable"
+        }
+      ]
+    }
+  ]
 }

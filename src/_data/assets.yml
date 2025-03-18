@@ -1,0 +1,19 @@
+assets:
+  asana-brand-campaign:
+    baseDir: /assets/portfolio
+    images:
+      - name: asana-brand-campaign-0.webp
+        description: >
+         Asana Brand Campaign
+      - name: asana-brand-campaign-1.webp
+        description: >
+         Asana Brand Campaign
+      - name: asana-brand-campaign-2.webp
+        description: >
+         Asana Brand Campaign
+      - name: asana-brand-campaign-3.webp
+        description: >
+         Asana Brand Campaign
+      - name: asana-brand-campaign-4.webp
+        description: >
+         Asana Brand Campaign

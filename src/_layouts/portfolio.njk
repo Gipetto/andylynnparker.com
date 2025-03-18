@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+{% set projects = collections.portfolio | sort(attribute="data.startdate", reverse=true) %}
+{% set previous = projects | getPreviousCollectionItem %}
+{% set next = projects | getNextCollectionItem %}
+<nav>
+  <ul class="projects-nav">
+    {% if previous %}
+      <li class="prev">
+        <a href="{{ previous.url }}">&larr; <span>Previous project</span></a>
+      </li>
+    {% endif %}
+    {% if next %}
+      <li class="next">
+        <a href="{{ next.url }}"><span>Next project</span> &rarr;</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
+<article>
+{{ content | safe }}
+</article>

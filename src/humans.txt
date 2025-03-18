@@ -1,0 +1,8 @@
+/* TEAM */
+Owner: Andy Lynn Parker
+Site: andylynnparker@gmail.com
+Location: Castle Pines, CO, USA, Earth
+
+/* SITE */
+  Language: English
+  Standards: HTML5, CSS3, Javascript

@@ -1,0 +1,10 @@
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: *
+Crawl-delay: 10
+
+Sitemap: https://andylynnparker.com/sitemap.xml

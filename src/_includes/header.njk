@@ -1,0 +1,13 @@
+<nav>
+  <ul>
+    <li class="{% if section === "home" %}active{% endif %}"><a href="/">Home</a></li>
+    <li class="{% if section === "portfolio" %}active{% endif %}"><a href="/portfolio">Portfolio</a></li>
+    <li class="{% if section === "resume" %}active{% endif %}"><a href="/resume">Resume</a></li>
+  </ul>
+</nav>
+<div class="intro">
+  <div class="me">
+    <h1><a href="/">{{ headline }}</a> 👋🏻</h1>
+    <h2>{{ subhead }}</h2>
+  </div>
+</div>
