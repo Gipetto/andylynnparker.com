@@ -29,13 +29,19 @@ subhead: I’m a Copywriter.
   </head>
   <body class="{{ section }}">
     <header>
-      {% include "header.njk" %}
+      <section>
+        {% include "header.njk" %}
+      </section>
     </header>
     <main>
-      {{ content | safe }}
+      <section>
+        {{ content | safe }}
+      </section>
     </main>
     <footer>
-      {% include "footer.njk" %}
+      <section>
+        {% include "footer.njk" %}
+      </section>
     </footer>
     {% for script in scripts %}
       <script src="{{ script }}"></script>
