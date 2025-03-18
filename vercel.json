@@ -10,7 +10,7 @@
         },
         {
           "key": "X-Frame-Options",
-          "value": "deny"
+          "value": "DENY"
         },
         {
           "key": "Referrer-Policy",
@@ -27,6 +27,15 @@
         {
           "key": "X-Powered-By",
           "value": "avocados and puppy dogs"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).pdf",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
         }
       ]
     },
