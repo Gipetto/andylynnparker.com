@@ -391,13 +391,15 @@ dialog.lightbox {
 .asana-home-page {
   margin-block: 4rem;
   line-height: 0;
+  display: flex;
+  flex-direction: column;
 
   picture {
-    width: 100%;
+    max-width: calc(100vh - 2rem);
   }
 
   img {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
   }
 }
