@@ -9,12 +9,6 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "css.format.enable": true,
   "debug.javascript.autoAttachFilter": "disabled",
   "debug.javascript.automaticallyTunnelRemoteServer": false,
@@ -33,12 +27,18 @@
   "eslint.useFlatConfig": true,
   "eslint.validate": [
     "javascript",
-    "javascriptreact",
-    "svelte"
   ],
   "files.insertFinalNewline": true,
   "javascript.format.semicolons": "remove",
   "prettier.enable": false,
   "svelte.enable-ts-plugin": true,
-  "typescript.format.semicolons": "remove"
+  "typescript.format.semicolons": "remove",
+  "emmet.includeLanguages": {
+    "*.njk": "html",
+    "njk": "html",
+    "nunjucks": "html"
+  },
+  "files.associations": {
+    "*.njk": "html"
+  }
 }

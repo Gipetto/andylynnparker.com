@@ -1,0 +1,36 @@
+{%- macro imageList(assets) -%}
+  <ul class="projects">
+    {%- for image in assets.images -%}
+      <li class="project">
+        <button class="lightbox" data-img="{{assets.baseDir }}/{{ image.name | url }}">
+          <picture>
+            <img src="{{assets.baseDir }}/{{ image.name }}" alt="{{ image.description}}" />
+          </picture>
+          <span>
+            <h3>{{ loop.index }}</h3>
+          </span>
+        </button>
+      </li>
+    {%- endfor -%}
+  </ul>
+  <dialog class="lightbox">
+    <form method="dialog">
+      <button class="sr-only" autofocus formmethod="dialog">
+        <span>Close Dialog</span>
+      </button>
+      <img src="">
+    </form>
+  </dialog>
+{%- endmacro -%}
+
+{%- macro projectsList(projects) -%}
+  <ol class="project-list">
+    {%- for project in projects | sort(attribute="data.startdate", reverse=true) -%}
+      <li>
+        <a href="{{ project.url | url }}">
+          <h3>{{ project.data.title }}</h3>
+        </a>
+      </li>
+    {% endfor -%}
+  </ol>
+{%- endmacro -%}

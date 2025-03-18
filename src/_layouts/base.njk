@@ -1,0 +1,45 @@
+---
+headline: I’m Andy Parker.
+subhead: I’m a Copywriter.
+---
+<!doctype html>
+<html>
+  <head>
+    <title>{% if title %}{{ title }} | {% endif %}{{site.title}}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="keywords" content="{{ site.keywords.join(", ") }}">
+    <meta name="author" content="Andy Lynn Parker">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/css/app.css?c={{ site.buildTime }}" as="style">
+    <link rel="stylesheet" href="/css/app.css?c={{ site.buildTime }}">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="orange">
+    <link rel="author" href="/humans.txt">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ title or site.ogTitle }}">
+    <meta property="og:site_name" content="{{ site.ogTitle }}">
+    <meta property="og:description" content="{{ description or site.ogDescription }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="follow index">
+  </head>
+  <body class="{{ section }}">
+    <header>
+      {% include "header.njk" %}
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer>
+      {% include "footer.njk" %}
+    </footer>
+    {% for script in scripts %}
+      <script src="{{ script }}"></script>
+    {% endfor %}
+    <script src="/js/main.js"></script>
+  </body>
+</html>
