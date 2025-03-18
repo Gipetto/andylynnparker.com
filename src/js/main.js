@@ -12,7 +12,11 @@ const init = () => {
     pdfDiv.style.height = `calc(100vh - (${hRect.height}px + ${fRect.height}px + 4rem))`
     pdfDiv.style.width = "100%"
 
-    PDFObject.embed("/assets/ALP-Resume-2025.pdf", pdfDiv)
+    PDFObject.embed("/assets/ALP-Resume-2025.pdf", pdfDiv, {
+      title: "Andy Lynn Parker | Resume",
+      zoom: "page-width",
+      pagemode: "none"
+    })
   }
 
   const lightboxButtons = document.querySelectorAll("button.lightbox")
