@@ -26,11 +26,13 @@
 {%- macro projectsList(projects) -%}
   <ol class="project-list">
     {%- for project in projects | sort(attribute="data.startdate", reverse=true) -%}
-      <li>
-        <a href="{{ project.url | url }}">
-          <h3>{{ project.data.title }}</h3>
-        </a>
-      </li>
+      {%- if not project.data.draft -%}
+        <li>
+          <a href="{{ project.url | url }}">
+            <h3>{{ project.data.title }}</h3>
+          </a>
+        </li>
+      {%- endif -%}
     {% endfor -%}
   </ol>
 {%- endmacro -%}
