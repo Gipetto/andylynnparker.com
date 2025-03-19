@@ -15,6 +15,7 @@ assets:
     - name: asana-brand-campaign-0.webp
       description: >
         Asana Brand Campaign
+      padding: true
     - name: asana-brand-campaign-1.webp
       description: >
         Asana Brand Campaign
@@ -37,5 +38,5 @@ assets:
 
 <p>And the people in these ads? They’re not just customers—they’re teams who work together in Asana and were very happy to be photographed for our campaign.</p>
 
-{% from "portfolio.macro.njk" import imageList %}
-{{ imageList(assets) }}
+{% from "portfolio.macro.njk" import gallery %}
+{{ gallery(assets) }}

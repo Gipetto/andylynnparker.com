@@ -1,0 +1,39 @@
+.project-list {
+  counter-reset: projects-list;
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-block: 2rem;
+    padding-left: 5ch;
+
+    *,
+    &::before {
+      font-size: 2rem;
+      font-size: clamp(1.75rem, 1.4375rem + 1vw, 2rem);
+    }
+    
+    &::before {
+      font-weight: 600;
+      color: var(--color-light);
+      counter-increment: projects-list;
+      content: counter(projects-list, decimal-leading-zero);
+      text-decoration: none !important;
+      width: 2.5ch;
+      float: left;
+      margin-left: -2.5ch;
+    }
+    
+    a {
+      color: var(--color-text);
+      text-decoration: none;
+  
+      &:hover {
+        color: var(--color-primary);
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
