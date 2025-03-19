@@ -44,8 +44,8 @@ subhead: I’m a Copywriter.
       </section>
     </footer>
     {% for script in scripts %}
-      <script src="{{ script }}"></script>
+      <script src="{{ script }}?c={{ site.buildTime }}"></script>
     {% endfor %}
-    <script src="/js/main.js"></script>
+    <script src="/js/main.js?c={{ site.buildTime }}"></script>
   </body>
 </html>

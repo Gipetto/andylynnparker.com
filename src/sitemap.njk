@@ -9,12 +9,12 @@ eleventyExcludeFromCollections: true
   xmlns:xhtml="https://www.w3.org/1999/xhtml"
   xmlns:mobile="https://www.google.com/schemas/sitemap-mobile/1.0"
 >
-{% for page in collections.all %}
-  {% if not pge.data.draft %}
-    <url>
-      <loc>{{ site.url }}{{ page.url | url }}</loc>
-      <changefreq>monthly</changefreq>
-    </url>
-  {% endif %}
-{% endfor %}
+{%- for page in collections.all -%}
+{%- if not page.data.draft %}
+<url>
+  <loc>{{ site.url }}{{ page.url | url }}</loc>
+  <changefreq>monthly</changefreq>
+</url>
+{%- endif -%}
+{%- endfor %}
 </urlset>
