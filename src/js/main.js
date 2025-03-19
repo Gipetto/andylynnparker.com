@@ -25,8 +25,10 @@ const init = () => {
     const dialog = document.querySelector("dialog.lightbox")
     const dialogImage = dialog.querySelector("img")
   
-    const showLightbox = (button) => {
-      dialogImage.src = button.dataset.img
+    const showLightbox = (button, e) => {
+      dialogImage.src = button.querySelector("img").src
+      dialog.classList.toggle("pad", button.classList.contains("pad-lightbox"))
+
       dialog.showModal()
       e.stopPropagation()
       e.preventDefault()
@@ -35,11 +37,13 @@ const init = () => {
     const hideLightbox = (e) => {
       e.stopPropagation()
       e.preventDefault()
-      dialog.close()
+      if (e.button !== 2) {
+        dialog.close()
+      }
     }
 
     lightboxButtons.forEach((button) => {
-      button.onclick = () => showLightbox(button)
+      button.onclick = (e) => showLightbox(button, e)
     })
 
     dialog.onmousedown = hideLightbox

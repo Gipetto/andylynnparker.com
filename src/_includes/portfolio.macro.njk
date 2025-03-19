@@ -1,10 +1,10 @@
-{%- macro imageList(assets) -%}
-  <ul class="projects">
+{%- macro gallery(assets) -%}
+<ul class="gallery">
     {%- for image in assets.images -%}
-      <li class="project">
-        <button class="lightbox" data-img="{{assets.baseDir }}/{{ image.name | url }}">
+      <li class="gallery-item">
+        <button class="lightbox{% if image.padding %} pad-lightbox{% endif %}">
           <picture>
-            <img src="{{assets.baseDir }}/{{ image.name }}" alt="{{ image.description}}" />
+            <img src="{{assets.baseDir }}/{{ image.name | url }}" alt="{{ image.description }}" />
           </picture>
           <span>
             <h3>{{ loop.index }}</h3>
@@ -18,7 +18,7 @@
       <button class="sr-only" autofocus formmethod="dialog">
         <span>Close Dialog</span>
       </button>
-      <img src="">
+      <img class="" src="">
     </form>
   </dialog>
 {%- endmacro -%}

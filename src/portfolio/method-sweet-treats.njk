@@ -15,12 +15,15 @@ assets:
     - name: method-sweet-treats-0.webp
       description: >
         Method Sweet Treats
+      padding: true
     - name: method-sweet-treats-1.webp
       description: >
         Method Sweet Treats
+      padding: true
     - name: method-sweet-treats-2.webp
       description: >
         Method Sweet Treats
+      padding: true
     - name: method-sweet-treats-3.webp
       description: >
         Method Sweet Treats
@@ -40,5 +43,5 @@ assets:
 
 <p>The website features copy about the collection and product (hand washes are grouped together) as well as each scent.</p> 
 
-{% from "portfolio.macro.njk" import imageList %}
-{{ imageList(assets) }}
+{% from "portfolio.macro.njk" import gallery %}
+{{ gallery(assets) }}
