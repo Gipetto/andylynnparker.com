@@ -10,9 +10,12 @@ export default function(eleventyConfig) {
   eleventyConfig.watchIgnores.add("src/scss/**/*.scss")
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: [ "webp" ],
+    widths: [ 500, "auto" ],
     hashLength: 16,
     svgShortCircuit: true,
-    transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve"
+    // transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
+    transformOnRequest: false
   })
   
   eleventyConfig.setServerOptions({

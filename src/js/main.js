@@ -26,7 +26,12 @@ const init = () => {
     const dialogImage = dialog.querySelector("img")
   
     const showLightbox = (button, e) => {
-      dialogImage.src = button.querySelector("img").src
+      const srcImg = button.querySelector("img")
+      dialogImage.src = srcImg.src
+      dialogImage.srcset = srcImg.srcset
+      dialogImage.width = srcImg.width
+      dialogImage.height = srcImg.height
+      dialogImage.sizes = srcImg.sizes
       dialog.classList.toggle("pad", button.classList.contains("pad-lightbox"))
 
       dialog.showModal()

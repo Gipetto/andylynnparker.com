@@ -4,7 +4,7 @@
       <li class="gallery-item">
         <button class="lightbox{% if image.padding %} pad-lightbox{% endif %}">
           <picture>
-            <img src="{{assets.baseDir }}/{{ image.name | url }}" alt="{{ image.description }}" />
+            <img eleventy:widths="400,auto" sizes="400,auto" src="{{assets.baseDir }}/{{ image.name | url }}" alt="{{ image.description }}" />
           </picture>
           <span>
             <h3>{{ loop.index }}</h3>
@@ -18,7 +18,7 @@
       <button class="sr-only" autofocus formmethod="dialog">
         <span>Close Dialog</span>
       </button>
-      <img class="" src="">
+      <img eleventy:ignore class="" src="">
     </form>
   </dialog>
 {%- endmacro -%}
