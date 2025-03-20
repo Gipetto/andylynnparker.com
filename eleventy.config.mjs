@@ -25,6 +25,7 @@ export default function(eleventyConfig) {
   })
 
   return {
+    markdownTemplateEngine: "njk",
     dir: {
       input: "src",
       layouts: "_layouts",

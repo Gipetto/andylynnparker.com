@@ -34,9 +34,9 @@ assets:
         Snapfish Ad Copy
 ---
 
-<h2>Snapfish Ad Copy</h2>
+## Snapfish Ad Copy
 
-<p>Snapfish is an online retailer that helps customers turn their photos into personal décor, photo books, mugs, gifts, and more. These website banner ads promote specific offers, products, and even occasions. I generally tried to write short, emotional headlines to get readers’ attention while using body copy to emphasize the offer.</p>
+Snapfish is an online retailer that helps customers turn their photos into personal décor, photo books, mugs, gifts, and more. These website banner ads promote specific offers, products, and even occasions. I generally tried to write short, emotional headlines to get readers’ attention while using body copy to emphasize the offer.
 
 {% from "portfolio.macro.njk" import gallery %}
 {{ gallery(assets) }}

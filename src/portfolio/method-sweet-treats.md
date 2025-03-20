@@ -35,9 +35,9 @@ assets:
         Method Sweet Treats
 ---
 
-<h2>Method Sweet Treats</h2>
+## Method Sweet Treats
 
-<p>One of the joys of writing for Method was spending time in the lab smelling all the latest scents. For these limited edition products, I wrote copy for packaging as well as the website.</p> 
+One of the joys of writing for Method was spending time in the lab smelling all the latest scents. For these limited edition products, I wrote copy for packaging as well as the website.
 
 {% from "portfolio.macro.njk" import gallery %}
 {{ gallery(assets) }}

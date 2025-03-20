@@ -32,9 +32,9 @@ assets:
         Method Packaging
 ---
 
-<h2>Product, Packaging, and Other Copy</h2>
+## Product, Packaging, and Other Copy
 
-<p>The following examples include product descriptions for e-commerce sites Snapfish and Method, as well as copy for Method product packaging, hang tags, and a printed coupon.</p> 
+The following examples include product descriptions for e-commerce sites Snapfish and Method, as well as copy for Method product packaging, hang tags, and a printed coupon.
 
 {% from "portfolio.macro.njk" import gallery %}
 {{ gallery(assets) }}

@@ -38,9 +38,9 @@ body {
   padding: 0;
 }
 
-header,
-footer,
-main {
+body>header,
+body>footer,
+body>main {
   /*
   @todo: fix this, probably needs to go on children?
   Prevent layout shift when no scrollbar is present:
@@ -97,7 +97,7 @@ footer {
   }
 }
 
-header {
+body>header {
   padding-top: 1rem;
   background: var(--color-primary);
 
@@ -143,12 +143,6 @@ header {
   } 
 }
 
-header .intro {
-  h1 {
-    color: var(--color-background) !important;
-  }
-}
-
 main .intro {
   h1,
   h2,
@@ -167,7 +161,7 @@ main .intro {
     color: var(--color-light);
   }
 
-  .intro-intro {
+  header {
     img {
       float: left;
       width: 7rem;

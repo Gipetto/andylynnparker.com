@@ -29,9 +29,9 @@ assets:
         Method Power Foam Dish Soap
 ---
 
-<h2>Power Foam Dish Soap</h2>
+## Power Foam Dish Soap
 
-<p>Back in 2013, Method was gearing up for the launch of its newest product, the instantly foaming, easy-to-spray, clean-your-dishes-on-the-spot Power Foam Dish Soap. To promote it, I wrote ad and product copy for a few touchpoints, including the homepage, product page, and two email newsletters.</p>
+Back in 2013, Method was gearing up for the launch of its newest product, the instantly foaming, easy-to-spray, clean-your-dishes-on-the-spot Power Foam Dish Soap. To promote it, I wrote ad and product copy for a few touchpoints, including the homepage, product page, and two email newsletters.
 
 {% from "portfolio.macro.njk" import gallery %}
 {{ gallery(assets) }}

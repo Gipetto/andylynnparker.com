@@ -46,11 +46,11 @@ assets:
        Where there’s Asana, there’s a way campaign
 ---
 
-<h2>Where there’s Asana, there’s a way campaign</h2>
+## Where there’s Asana, there’s a way campaign
 
-<h3><em>It turns out when we’re hitting our goals nobody cares if we’re wearing pants</em></h3>
+### _It turns out when we’re hitting our goals nobody cares if we’re wearing pants_
 
-<p>In late 2020, Asana launched another brand campaign. The goal? To position Asana as the essential business tools for remote and distributed teams to meet company goals even through disruption (like, say, a pandemic). While my creative director worked with an advertising agency to produce a <a href="https://www.youtube.com/watch?v=IKmmJElKrY8" target="_blank">60-second commercial</a>, I collaborated with my design partner to flesh out about 400 assets, mostly for social paid ads for top, middle, and bottom of the funnel.</p>
+In late 2020, Asana launched another brand campaign. The goal? To position Asana as the essential business tools for remote and distributed teams to meet company goals even through disruption (like, say, a pandemic). While my creative director worked with an advertising agency to produce a <a href="https://www.youtube.com/watch?v=IKmmJElKrY8" target="_blank">60-second commercial</a>, I collaborated with my design partner to flesh out about 400 assets, mostly for social paid ads for top, middle, and bottom of the funnel.
 
 {% from "portfolio.macro.njk" import gallery %}
 {{ gallery(assets) }}

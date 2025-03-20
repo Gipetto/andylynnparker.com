@@ -29,9 +29,9 @@ assets:
         Sephora Spec Work
 ---
 
-<h2>Sephora Spec Work</h2>
+## Sephora Spec Work
 
-<p>When I first moved to San Francisco, I <strong class="strong">really</strong>, <strong class="stronger">really</strong>, <strong class="strongest">really</strong> wanted to work at Sephora’s corporate HQ writing ad copy. So I designed and wrote the copy for these ads to submit with my application. I may have gone overboard with the alliteration.</p>
+When I first moved to San Francisco, I <strong class="strong">really</strong>, <strong class="stronger">really</strong>, <strong class="strongest">really</strong> wanted to work at Sephora’s corporate HQ writing ad copy. So I designed and wrote the copy for these ads to submit with my application. I may have gone overboard with the alliteration.
 
 {% from "portfolio.macro.njk" import gallery %}
 {{ gallery(assets) }}
