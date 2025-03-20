@@ -21,6 +21,7 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
   "eslint.codeActionsOnSave.mode": "all",
   "eslint.enable": true,
   "eslint.format.enable": true,
@@ -39,6 +40,6 @@
     "nunjucks": "html"
   },
   "files.associations": {
-    "*.njk": "html"
+    "*.njk": "nunjucks"
   }
 }
