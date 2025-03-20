@@ -76,10 +76,6 @@ h6 {
   text-wrap: balance;
 }
 
-h3 {
-  font-size: 3rem;
-}
-
 p {
   hanging-punctuation: first allow-end last;
   orphans: 3;
@@ -219,5 +215,12 @@ footer {
   .next {
     grid-row: 1;
     justify-self: end;
+  }
+}
+
+article {
+  h3 {
+    font-weight: 500;
+    margin-top: 0.5rem;
   }
 }
