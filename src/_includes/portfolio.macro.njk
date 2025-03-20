@@ -6,9 +6,7 @@
           <picture>
             <img eleventy:widths="400,auto" sizes="400,auto" src="{{assets.baseDir }}/{{ image.name | url }}" alt="{{ image.description }}" />
           </picture>
-          <span>
-            <h3>{{ loop.index }}</h3>
-          </span>
+          <span class="index">{{ loop.index }}</span>
         </button>
       </li>
     {%- endfor -%}

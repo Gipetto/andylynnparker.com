@@ -53,7 +53,7 @@ body>main {
   padding-block: 2rem;
   padding-inline: min(4rem, 5%);
 
-  &>section {
+  &>div {
     max-width: var(--site-max-width);
     margin-inline: auto;
   }
