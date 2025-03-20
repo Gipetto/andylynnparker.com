@@ -4,7 +4,7 @@ dialog.lightbox {
   padding: 0;
   border: 1px solid white;
   border-radius: var(--border-radius);
-  box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.85);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.95);
   overflow: hidden;
 
   transition:
@@ -23,9 +23,11 @@ dialog.lightbox {
   form {
     margin: 0;
     padding: 0;
+    max-height: calc(100vh - 1rem);
 
     img {
       width: 100%;
+      max-height: calc(100vh - 1rem);
       margin: 0;
       padding: 0;
       margin-bottom: -5px;
